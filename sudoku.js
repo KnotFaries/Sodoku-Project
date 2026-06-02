@@ -49,6 +49,8 @@ function setGame(){
         for( let c = 0; c<9; c++){
             let tile = document.createElement("div");
             tile.id= r.toString() + "-" + c.toString();
+
+            // fills in the puzzel numbers
             if (board[r][c] != "-"){
                 tile.innerText= board[r][c]
                 tile.classList.add("tile-start")
@@ -87,8 +89,8 @@ function selectNumber(){
 function selectTile(){
     if (numselected){
         if(this.innerText !=""){
-            return
+            return // prevents overwritng
         }
-        this.innerText = numselected.id;
+        this.innerText = numselected.id; // adds number to tile
     }
 }
