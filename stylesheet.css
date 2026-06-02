@@ -1,0 +1,14 @@
+* {
+  /*outline: 2px solid red;*/
+  background-color: whitesmoke;
+  margin: 10px;
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(205, 215, 241);
+}
+h2{
+    text-align: center;
+    background-color: rgb(205, 215, 241);
+}
