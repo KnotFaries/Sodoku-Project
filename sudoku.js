@@ -26,3 +26,17 @@ var solution = [
     "675832941",
     "812945763"
 ]
+
+window.onload= function(){
+    setGame();
+}
+function setGame(){
+    //Digitis 1-9
+    for( let i= 1; i<=9; i++){
+        let number = document.createElement("div"); // creates div tag
+        number.id = i
+        number.innerText= i;
+        number.classList.add('number');
+        document.getElementById('digits').appendChild(number)
+    }
+}
