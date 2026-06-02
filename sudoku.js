@@ -15,6 +15,8 @@ var board = [
     "81--45---"
 ]
 
+var activeBoard= board;
+
 var solution = [
     "387491625",
     "241568379",
@@ -92,17 +94,19 @@ function selectTile(){
             return // prevents overwritng
         }
         
-
         let cords = this.id.split("-");// creates array as ["c"],["r"] where c and r are the corisponding cordiates
         let r = parseInt(cords[0]);
         let c = parseInt(cords[1]);
 
         if (solution[r][c]== numselected.id){
             this.innerText = numselected.id; // adds number to tile
+            activeBoard[r][c] = 
+            alert(activeBoard[r][c] )
         }
         else{
             error +=1;
             document.getElementById("error").innerText= error;
         }
+        
     }
 }
