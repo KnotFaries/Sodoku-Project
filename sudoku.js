@@ -53,6 +53,15 @@ function setGame(){
                 tile.innerText= board[r][c]
                 tile.classList.add("tile-start")
             }
+
+
+            // adds the lines to make the seprate squares
+            if(r==2 || r== 5){
+                tile.classList.add("horzontal-line")
+            }
+            if(c==2 || c== 5){
+                tile.classList.add("vertical-line")
+            }
             
             tile.addEventListener("click", selectTile);
             tile.classList.add('tile');
