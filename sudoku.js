@@ -38,6 +38,7 @@ function setGame(){
         let number = document.createElement("div"); // creates div tag
         number.id = i
         number.innerText= i;
+        number.addEventListener("click", selectNumber);
         number.classList.add('number');
         document.getElementById('digits').appendChild(number)
     }
@@ -54,3 +55,16 @@ function setGame(){
     }
 }
 
+function selectNumber(){
+    // adds a grey background to selected numbers. 
+
+    // removes existing divs 
+    if (numselected != null){
+        numselected.classList.remove('number-selected');
+    }
+
+    // adds in the current selected number 
+    numselected= this;
+    numselected.classList.add('number-selected'); // adds numselected class to the div
+
+}
