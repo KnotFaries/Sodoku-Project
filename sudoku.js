@@ -32,6 +32,8 @@ window.onload= function(){
 }
 function setGame(){
     //Digitis 1-9
+    // the following works inside the div called "digits"
+    // <div id= "i" class = "number"> i </div>
     for( let i= 1; i<=9; i++){
         let number = document.createElement("div"); // creates div tag
         number.id = i
