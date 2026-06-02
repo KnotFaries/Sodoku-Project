@@ -7,6 +7,12 @@ hr{
     width: 500px;
 }
 
+h1{
+    width: 500px;
+    background-color: rgb(205, 215, 241);
+    margin: 0 auto;
+}
+
 #error{
     color: coral;
 }
@@ -79,4 +85,8 @@ hr{
 
 .vertical-line{
     border-right: 1px solid black;
+}
+
+.highlight{
+    background-color: rgb(205, 215, 241);
 }
