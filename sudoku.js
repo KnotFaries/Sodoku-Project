@@ -117,3 +117,18 @@ function changeActiveBoard(r, c, n){
     activeBoard[r]= out
 
 }
+
+function checkWin(win){
+    let count =0
+    for(r=0; r<9; r++){
+        for (c=0; c<9; c++){
+            if (activeBoard[r][c] == "-"){
+                count +=1
+            }
+        }
+    }
+    if(count ==0){
+        console.log("WIN")
+        
+    }
+}
