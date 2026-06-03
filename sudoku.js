@@ -100,8 +100,7 @@ function selectTile(){
 
         if (solution[r][c]== numselected.id){
             this.innerText = numselected.id; // adds number to tile
-            activeBoard[r][c] = 
-            alert(activeBoard[r][c] )
+            changeActiveBoard(r, c, numselected.id)
         }
         else{
             error +=1;
@@ -109,4 +108,12 @@ function selectTile(){
         }
         
     }
+}
+
+function changeActiveBoard(r, c, n){
+    let part_one = activeBoard[r].substring(0,c)
+    let part_two = activeBoard[r].substring(c+1,9)
+    let out = part_one+n+part_two
+    activeBoard[r]= out
+
 }
