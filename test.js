@@ -66,7 +66,7 @@ function checkWin(win){
     }
 }
 console.log(activeBoard)
-checkWin(activeBoard)
+checkWin(solution)
 
 
 var problem= {"board": board, "solution": solution, "difficulty": "Easy"}

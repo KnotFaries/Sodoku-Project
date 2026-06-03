@@ -100,7 +100,9 @@ function selectTile(){
 
         if (solution[r][c]== numselected.id){
             this.innerText = numselected.id; // adds number to tile
-            changeActiveBoard(r, c, numselected.id)
+            changeActiveBoard(r, c, numselected.id) // Update active board
+            checkWin(activeBoard);
+            
         }
         else{
             error +=1;
@@ -122,13 +124,13 @@ function checkWin(win){
     let count =0
     for(r=0; r<9; r++){
         for (c=0; c<9; c++){
-            if (activeBoard[r][c] == "-"){
+            if (win[r][c] == "-"){
                 count +=1
             }
         }
     }
     if(count ==0){
-        console.log("WIN")
+        alert("WIN")
         
     }
 }
