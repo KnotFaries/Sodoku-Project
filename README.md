@@ -10,5 +10,3 @@ Built with HTML, CSS, and Javascript
 ## Aknowledgemnts
 This was orginally created by following [this tutorial](https://www.youtube.com/watch?v=S4uRtTb8U-U&t=45s) by [Kenny Yip Coding](https://www.youtube.com/channel/UCdZQlE28wAgm6SKX_u9_L-Q)
 
-
-[Duck Duck Go](https://duckduckgo.com)
